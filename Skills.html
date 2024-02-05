@@ -5,16 +5,21 @@
         <title>About Me</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body style="background-color:white">
+    <body class="background">
         <h1>Zacariah's Portfolio</h1>
         <nav>
-            <div class="navbar">
+            <div>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="About_Me.html">About Me</a></li>
-                    <li><a href="Resume.html">Resume</a></li>
-                    <li><a href="Skills.html">Skills</a></li>
-                    <li><a href="Socials.html">Socials</a></li>
+                    <li><a href="index.html">Home </a></li>
+                    <li>
+                        <a href="#">Pages ↓</a>
+                        <ul class="dropdown">
+                            <li><a href="About_Me.html">About Me</a></li>
+                            <li><a href="Resume.html">Resume</a></li>
+                            <li><a href="Skills.html">Skills</a></li>
+                            <li><a href="Socials.html">Socials</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -22,7 +27,7 @@
             <h1>This is the Skills Page</h1>
         </main>
         <h2>As mentioned on the "Resume" page, my skills include...</h2>
-        <ul>
+        <ul class="borders">
             <li>Experience coding in HTML and Python</li>
             <li>Experience making digital art</li>
             <li>Experience in game development/item and attack implementation</li>
