@@ -6,13 +6,13 @@ body{
     width: 100vw;
     height: 100vh;
     margin: 0;
-    background: url(images/);
+    background: #222;
     perspective: 1px;
     transform-style: preserve-3d;
     overflow-x: hidden;
     overflow-y: scroll;
 }
-.section1, .section2{
+.section1, .section2, .section3{
     width: 100%;
     min-height: 100vh;
     position: relative;
@@ -29,7 +29,8 @@ body{
     filter: blur(2px);
 }
 .section2{
-    background: rgb(0,144,166);
+    background: url(images/space2.jpg) bottom center;
+    background-size: cover;
 }
 .text{
     top: 30%;
@@ -46,4 +47,124 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 32px;
+    background: -webkit-linear-gradient(#301934, #d16aff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    font-weight: 700;
+}
+.navbar a{
+  position: relative;
+    font-size: 18px;
+    background: -webkit-linear-gradient(#d16aff, #301934);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #d16aff;
+    transition: .3s;
+}
+.navbar2 a:hover::before{
+    width: 100%;
+}
+.navbar2 a{
+    position: relative;
+    font-size: 18px;
+    background: -webkit-linear-gradient(yellow, Darkorange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.navbar2 a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: orangered;
+    transition: .3s;
+}
+.navbar2 a:hover::before{
+    width: 100%;
+}
+.astro{
+    width: 50%;
+    height: 50%;
+    transform: translate(15%, 0);
+}
+.section3::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(images/space.jpg) top center;
+    background-size: cover;
+    transform: translateZ(-1px) scale(2.2);
+    filter: blur(2px);
+}
+.blackhole{
+    top: 50%;
+    left:50%;
+    height: 75%;
+    width: 100%;
+}
+.anime{
+    font-size: 50px;
+    text-align: center;
+    font-family: Times New Roman, serif;
+    transform: translate(0%, -50%);
+}
+.goku{
+    transform: translate(10%, -250%);
+    height: 20%;
+    width: 20%;
+}
+.itadori{
+    transform: translate(100%, -250%);
+    height: 20%;
+    width: 20%;
+}
+.naruto{
+    transform: translate(445%, -250%);
+    height: 10%;
+    width: 10%;
+}
+.logo2 {
+    font-size: 32px;
+    background: -webkit-linear-gradient(yellow, Darkorange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    font-weight: 700;
+}
+.background{
+    background: url(images/anime.jpg) top center;
+    background-size: cover;
 }
