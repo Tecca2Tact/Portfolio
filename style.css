@@ -88,7 +88,7 @@ body{
     background: #d16aff;
     transition: .3s;
 }
-.navbar2 a:hover::before{
+.navbar a:hover::before{
     width: 100%;
 }
 .navbar2 a{
@@ -129,7 +129,8 @@ body{
     transform: translateZ(-1px) scale(2.2);
     filter: blur(2px);
 }
-.blackhole{
+.island{
+    transform: translate(0%, 30%);
     top: 50%;
     left:50%;
     height: 75%;
@@ -139,26 +140,25 @@ body{
     font-size: 50px;
     text-align: center;
     font-family: Times New Roman, serif;
-    transform: translate(0%, -50%);
+    transform: translateY(50%);
 }
 .goku{
-    transform: translate(10%, -250%);
+    transform: translate(10%, -275%);
     height: 20%;
     width: 20%;
 }
 .itadori{
-    transform: translate(100%, -250%);
+    transform: translate(100%, -275%);
     height: 20%;
     width: 20%;
 }
 .naruto{
-    transform: translate(445%, -250%);
+    transform: translate(445%, -275%);
     height: 10%;
     width: 10%;
 }
-.logo2 {
-    font-size: 32px;
-    background: -webkit-linear-gradient(yellow, Darkorange);
+.logo2{
+    font-size: 32px;background: -webkit-linear-gradient(yellow, Darkorange);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
@@ -167,4 +167,12 @@ body{
 .background{
     background: url(images/anime.jpg) top center;
     background-size: cover;
+}
+.astroman{
+    transform: translate(230%, -240%);
+    height: 8%;
+    width: 8%;
+}
+.blackhole{
+    transform: translate(180%, 275%);
 }
