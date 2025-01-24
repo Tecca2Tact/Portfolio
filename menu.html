@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Ordering Form</title>
+</head>
+<body>
+<form>
+  <fieldset>
+      <h1>Information Section</h1>
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="fname">
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lname">
+      <label for="dob">Date</label>
+      <input type="date" id="dob" name="dob">
+      <br>
+      <br>
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email">
+      <label for="phone">Phone #</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+  </fieldset>
+  <fieldset>
+      <h1>Food Section</h1>
+      <label for="itemchoice">What item would you like?</label>
+      <select name="itemchoice" id="itemchoice">
+          <optgroup label="Food">
+              <option value="pizza">Pizza</option>
+              <option value="bread">Bread-sticks</option>
+              <option value="cheese">Cheese Bites</option>
+              <option value="chicken">Chicken Wings</option>
+          </optgroup>
+      </select>
+
+  </fieldset>
+</form>
+</body>
+</html>
