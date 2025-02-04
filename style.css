@@ -176,3 +176,7 @@ body{
 .blackhole{
     transform: translate(180%, 275%);
 }
+.background2{
+    border-color: azure;
+    border-width: 10px;
+}
